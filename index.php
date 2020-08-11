@@ -4,6 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link rel="apple-touch-icon" sizes="180x180" href="./Includes/Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Includes/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./Includes/Favicon/favicon-16x16.png">
+    <link rel="manifest" href="./Includes/Favicon/site.webmanifest">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./CSS/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="./CSS/bootstrap.min.css">
