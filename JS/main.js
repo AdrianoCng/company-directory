@@ -398,9 +398,11 @@ $(document).ready(() => {
 
         console.log(data);
 
-        if (!data) {
+        if (data == "q=") {
 
             loadPage();
+
+            return;
 
         }
 
