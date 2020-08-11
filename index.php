@@ -4,10 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="./Includes/Favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./Includes/Favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./Includes/Favicon/favicon-16x16.png">
     <link rel="manifest" href="./Includes/Favicon/site.webmanifest">
+
+    <!-- Font Logo -->
+    <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./CSS/bootstrap-reboot.min.css">
@@ -162,7 +166,7 @@
           <!-- Navbar -->
           <nav class="navbar navbar-dark bg-dark fixed-top">
             <button class="btn" id="menu-toggle"><span class="navbar-toggler-icon"></span></button>
-            <a class="navbar-brand">Company Directory</a>
+            <a class="navbar-brand" id="logo" ><img src="./Includes/Favicon/favicon-32x32.png" alt="logo"> Company Directory</a>
             <button class="btn" id="add" data-toggle="modal" data-target="#create"><i class="fas fa-user-plus text-white"></i></button>
           </nav>
     

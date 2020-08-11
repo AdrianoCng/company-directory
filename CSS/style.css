@@ -1,3 +1,8 @@
+#logo {
+  color: #48B;
+  font-family: 'Leckerli One', cursive;
+}
+
 /* Sidebar */
 
 #wrapper {
@@ -24,7 +29,7 @@
 
 #page-content-wrapper {
   min-width: 100vw;
-  padding-top: 56px;
+  padding-top: 60px;
 }
 
 #wrapper.toggled #sidebar-wrapper {
