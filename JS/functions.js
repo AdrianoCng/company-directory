@@ -74,7 +74,7 @@ const renderCards = data => {
                             </button>
                         </div>
                         <div class="modal-body mb-3">
-                            <form action="" id="update-form-modal${index}" method="POST">
+                            <form action="" id="update-form-modal-${data.data[index].id}" method="POST">
                             <div id="alert-${data.data[index].id}"></div>
                             <div class="form-row">
                                 <div class="col">

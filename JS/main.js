@@ -276,6 +276,8 @@ $(document).ready(() => {
 
         const id = $(this).find("input[name='id']").val();
 
+        $(this).find(`#update-form-modal-${id}`).reset();
+
         const departmentId = $(this).find("input[name='departmentId'").val();
 
         $(this).find(`#department-modal-update-delete${id}`).children(`option[value='${departmentId}']`).attr("selected", "selected");
