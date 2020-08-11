@@ -396,6 +396,8 @@ $(document).ready(() => {
 
         const data = $("#search-form-input").serialize();
 
+        console.log(data);
+
         if (!data) {
 
             loadPage();
