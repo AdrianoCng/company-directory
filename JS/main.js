@@ -271,18 +271,54 @@ $(document).ready(() => {
     });
 
     // Select department from <select> options in the modal
+    // Set location input value in Update And Delete Modals OnChange
 
     $("#modalDiv").on("shown.bs.modal", "div.modal", function() {
 
         const id = $(this).find("input[name='id']").val();
 
-        console.log($(this).find(`#update-form-modal-${id}`));
-
-        $(this).find(`#update-form-modal-${id}`)[0].reset();
-
         const departmentId = $(this).find("input[name='departmentId'").val();
 
         $(this).find(`#department-modal-update-delete${id}`).children(`option[value='${departmentId}']`).attr("selected", "selected");
+
+        const locationInput = $(this).find(`#location-modal-update-delete${id}`);
+
+        $(this).find(`#department-modal-update-delete${id}`).change(function() {
+
+            const valueSelected = this.value;
+                    
+            switch (valueSelected) {
+                case "1":
+                case "4":
+                case "5":
+                    locationInput.val("London");
+                    break;
+                case "2":
+                case "3":
+                    locationInput.val("New York");
+                    break;
+                case "6":
+                case "7":
+                case "12":
+                    locationInput.val("Paris");
+                    break;
+                case "8":
+                case "9":
+                    locationInput.val("Munich");
+                    break;
+                case "10":
+                case "11":
+                    locationInput.val("Rome");
+                    break;
+            };
+
+        });
+
+    });
+
+    $("#modalDiv").on("hidden.bs.modal", "div.modal", function() {
+
+        $(this).find(`#update-form-modal-${id}`)[0].reset();
 
     });
 
@@ -351,49 +387,6 @@ $(document).ready(() => {
                 locationInput.val("Rome");
                 break;
         };
-
-    });
-
-    // Set location input value in Update And Delete Modals OnChange
-
-    $("#modalDiv").on("shown.bs.modal", "div.modal", function() {
-
-        const id = $(this).find("input[name='id']").val();
-
-        const departmentId = $(this).find("input[name='departmentId'").val();
-
-        const locationInput = $(this).find(`#location-modal-update-delete${id}`);
-
-        $(this).find(`#department-modal-update-delete${id}`).change(function() {
-
-            const valueSelected = this.value;
-                    
-            switch (valueSelected) {
-                case "1":
-                case "4":
-                case "5":
-                    locationInput.val("London");
-                    break;
-                case "2":
-                case "3":
-                    locationInput.val("New York");
-                    break;
-                case "6":
-                case "7":
-                case "12":
-                    locationInput.val("Paris");
-                    break;
-                case "8":
-                case "9":
-                    locationInput.val("Munich");
-                    break;
-                case "10":
-                case "11":
-                    locationInput.val("Rome");
-                    break;
-            };
-
-        });
 
     });
 
