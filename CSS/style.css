@@ -1,0 +1,193 @@
+/* Sidebar */
+
+#wrapper {
+  overflow-x: hidden;
+}
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15.5rem;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper form {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+@media (min-width: 992px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #menu-toggle {
+    visibility: hidden;
+  }
+
+  .card-deck .card {
+  -ms-flex: 1 0 25%;
+  flex: 1 0 25%;
+  margin-right: 15px;
+  margin-bottom: 0;
+  margin-left: 15px;
+}
+}
+
+/* Text input with search icon */
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+}
+
+/* Location Menu Sidebar */
+
+.badgebox
+{
+  opacity: 0;
+}
+
+.badgebox + .badge
+{
+  text-indent: -999999px;
+	width: 27px;
+}
+
+.badgebox:focus + .badge
+{
+  box-shadow: inset 0px 0px 5px;
+}
+
+.badgebox:checked + .badge
+{
+	text-indent: 0;
+}
+
+#location-button {
+  width: 183.67px;
+}
+
+/* Card */
+
+div.card-deck {
+  justify-content: space-around;
+}
+
+.card.hovercard {
+  position: relative;
+  padding-top: 0;
+  overflow: hidden;
+  text-align: center;
+  background-color: rgba(214, 224, 226, 0.2);
+  max-width: 850px;
+}
+
+.card.hovercard .cardheader {
+  /* http://lorempixel.com/100/100/people/9  */
+  /* https://picsum.photos/850/280 */
+  /* background: url("https://picsum.photos/850/280");   */
+
+  /* UNCOMMENT BELOW AND DELETE LINE STYLE (const renderCards -> const card -> div.cardheader) FOR LINEAR GRADIENT BACKGROUND */
+
+  /* background: #bdc3c7; */
+  /* background: -webkit-linear-gradient(to bottom, #2c3e50, #ffffff); */
+  /* background: linear-gradient(to bottom, #2c3e50, #fff); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 135px;
+}
+
+.card.hovercard .avatar {
+  position: relative;
+  top: -50px;
+  margin-bottom: -50px;
+}
+
+.card.hovercard .avatar img {
+  width: 100px;
+  height: 100px;
+  max-width: 100px;
+  max-height: 100px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 5px solid rgba(255,255,255,0.5);
+}
+
+.card.hovercard .info {
+  padding: 4px 8px 10px;
+}
+
+.card.hovercard .info .title {
+  margin-bottom: 4px;
+  font-size: 24px;
+  line-height: 1;
+  color: #262626;
+  vertical-align: middle;
+}
+
+.card.hovercard .info .desc {
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 20px;
+  color: #737373;
+  text-overflow: ellipsis;
+}
+
+.card.hovercard .bottom {
+  padding: 0 20px;
+  margin-bottom: 17px;
+}
+
+.card-deck .card {
+  -ms-flex: 1 0 25%;
+  flex: 1 0 25%;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+
+@media (min-width: 576px) and  (max-width: 992px) {
+  .card-deck .card {
+    -ms-flex: 1 0 33.333333%;
+    flex: 1 0 33.333333%;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+  }
+}
