@@ -155,7 +155,7 @@
         <!-- Page Content -->
         <div id="page-content-wrapper">
           <!-- Navbar -->
-          <nav class="navbar navbar-dark bg-dark">
+          <nav class="navbar navbar-dark bg-dark fixed-top">
             <button class="btn" id="menu-toggle"><span class="navbar-toggler-icon"></span></button>
             <a class="navbar-brand">Company Directory</a>
             <button class="btn" id="add" data-toggle="modal" data-target="#create"><i class="fas fa-user-plus text-white"></i></button>
