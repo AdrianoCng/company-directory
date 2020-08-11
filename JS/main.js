@@ -319,7 +319,7 @@ $(document).ready(() => {
     $("#modalDiv").on("hidden.bs.modal", "div.modal", function() {
 
         const id = $(this).find("input[name='id']").val();
-        
+
         $(this).find(`#update-form-modal-${id}`)[0].reset();
 
     });
@@ -395,6 +395,12 @@ $(document).ready(() => {
     $("#searchInput").keyup(function() {
 
         const data = $("#search-form-input").serialize();
+
+        if (!data) {
+
+            loadPage();
+
+        }
 
         $.post("./PHP/searchByName.php", data, function(res) {
 
