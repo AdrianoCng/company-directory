@@ -276,7 +276,9 @@ $(document).ready(() => {
 
         const id = $(this).find("input[name='id']").val();
 
-        $(this).find(`#update-form-modal-${id}`).reset();
+        console.log($(this).find(`#update-form-modal-${id}`));
+
+        $(this).find(`#update-form-modal-${id}`)[0].reset();
 
         const departmentId = $(this).find("input[name='departmentId'").val();
 
