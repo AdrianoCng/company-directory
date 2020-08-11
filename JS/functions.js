@@ -184,13 +184,13 @@ const loadPage = () => {
 
             if (index == 1) {
 
-                const li = `<li class="page-item active"><a class="page-link" href="javascript:getRequestAllPersonnel('${index}')">${index}</a></li>`;
+                const li = `<li class="page-item active mb-2"><a class="page-link" href="javascript:getRequestAllPersonnel('${index}')">${index}</a></li>`;
                 $("ul.pagination").append(li);
                 continue;
 
             }
 
-             const li = `<li class="page-item"><a class="page-link" href="javascript:getRequestAllPersonnel('${index}')">${index}</a></li>`;
+             const li = `<li class="page-item mb-2"><a class="page-link" href="javascript:getRequestAllPersonnel('${index}')">${index}</a></li>`;
              $("ul.pagination").append(li);
 
         }
