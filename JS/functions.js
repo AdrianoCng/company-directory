@@ -178,6 +178,8 @@ const loadPage = () => {
 
     $.get("./PHP/getAllPersonnel.php", (data) => {
 
+        $("ul.pagination").html("");
+
         for (let index = 1; index <= data.metadata.pages; index++) {
 
             if (index == 1) {

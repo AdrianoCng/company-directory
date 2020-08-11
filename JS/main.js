@@ -20,8 +20,6 @@ $(document).ready(() => {
 
         $.post("./PHP/getPersonnelByOptions.php", data, function(res) {
 
-            console.log(res);
-
             $("ul.pagination").html("");
 
             for (let index = 1; index <= res.metadata.pages; index++) {
