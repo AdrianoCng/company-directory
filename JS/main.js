@@ -318,6 +318,8 @@ $(document).ready(() => {
 
     $("#modalDiv").on("hidden.bs.modal", "div.modal", function() {
 
+        const id = $(this).find("input[name='id']").val();
+        
         $(this).find(`#update-form-modal-${id}`)[0].reset();
 
     });
