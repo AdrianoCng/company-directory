@@ -301,7 +301,6 @@ $(document).ready(() => {
     });
 
     $(".card-deck").on("click", "a", function() {
-        console.log("here");
 
         $("html, body").animate({ scrollTop: 0 }, "fast");
 
@@ -319,7 +318,7 @@ $(document).ready(() => {
 
     // -->
 
-    // Set location input value in Create-modal
+    // Set location input value in Create-modal OnChange
 
     $("#department-modal-create").change(function() {
 
@@ -353,13 +352,55 @@ $(document).ready(() => {
 
     });
 
+    // Set location input value in Update And Delete Modals OnChange
+
+    $("#modalDiv").on("shown.bs.modal", "div.modal", function() {
+
+        const id = $(this).find("input[name='id']").val();
+
+        const departmentId = $(this).find("input[name='departmentId'").val();
+
+        const locationInput = $(this).find(`#location-modal-update-delete${id}`);
+
+        $(this).find(`#department-modal-update-delete${id}`).change(function() {
+
+            const valueSelected = this.value;
+                    
+            switch (valueSelected) {
+                case "1":
+                case "4":
+                case "5":
+                    locationInput.val("London");
+                    break;
+                case "2":
+                case "3":
+                    locationInput.val("New York");
+                    break;
+                case "6":
+                case "7":
+                case "12":
+                    locationInput.val("Paris");
+                    break;
+                case "8":
+                case "9":
+                    locationInput.val("Munich");
+                    break;
+                case "10":
+                case "11":
+                    locationInput.val("Rome");
+                    break;
+            };
+
+        });
+
+    });
+
     $("#searchInput").keyup(function() {
 
         const data = $("#search-form-input").serialize();
 
         $.post("./PHP/searchByName.php", data, function(res) {
 
-            console.log(res);
             $("ul.pagination").html("");
 
             for (let index = 1; index <= res.metadata.pages; index++) {

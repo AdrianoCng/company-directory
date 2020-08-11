@@ -112,7 +112,7 @@ const renderCards = data => {
                                 </div>
                                 <div class="col-6">
                                 <label class="col-form-label" for="location-modal-update-delete${index}">Location: </label>
-                                <input readonly class="form-control-sm form-control-plaintext" type="text" name="location" id="location-modal-update-delete${index}" value="${data.data[index].locationName}" required>
+                                <input readonly class="form-control-sm form-control-plaintext" type="text" name="location" id="location-modal-update-delete${data.data[index].id}" value="${data.data[index].locationName}" required>
                                 </div>                   
                             </div>
                             <div class="form-row">
