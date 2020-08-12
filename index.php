@@ -107,54 +107,18 @@
             
             <!-- Search by department -->
             <p class="h3 text-secondary ml-2 my-4"><i class="fas fa-building"></i> Department</p>
-            <div class="custom-control custom-checkbox my-3">
-              <input class="custom-control-input" name="by_department[Human Resources]" type="checkbox" value="1" id="Human Resources">
-              <label class="custom-control-label" for="Human Resources">Human Resources</label>
-            </div>
-            <div class="custom-control custom-checkbox my-3">
-                <input class="custom-control-input" name="by_department[Sales]" type="checkbox" value="2" id="Sales">
-                <label class="custom-control-label" for="Sales">Sales</label>
-            </div>
-            <div class="custom-control custom-checkbox my-3">
-                <input class="custom-control-input" name="by_department[Marketing]" type="checkbox" value="3" id="Marketing">
-                <label class="custom-control-label" for="Marketing">Marketing</label>
-            </div>
-            <div class="custom-control custom-checkbox my-3">
-                <input class="custom-control-input" name="by_department[Legal]" type="checkbox" value="4" id="Legal">
-                <label class="custom-control-label" for="Legal">Legal</label>
-            </div>
-            <div class="custom-control custom-checkbox my-3">
-                <input class="custom-control-input" name="by_department[Services]" type="checkbox" value="5" id="Services">
-                <label class="custom-control-label" for="Services">Services</label>
-            </div>
-            <div class="custom-control custom-checkbox my-3">
-                <input class="custom-control-input" name="by_department[Research and Developmen]" type="checkbox" value="6" id="Research and Development">
-                <label class="custom-control-label" for="Research and Development">Research and Development</label>
-            </div>
-            <div class="custom-control custom-checkbox my-3">
-                <input class="custom-control-input" name="by_department[Product Management]" type="checkbox" value="7" id="Product Management">
-                <label class="custom-control-label" for="Product Management">Product Management</label>
-            </div>
-            <div class="custom-control custom-checkbox my-3">
-                <input class="custom-control-input" name="by_department[Training]" type="checkbox" value="8" id="Training">
-                <label class="custom-control-label" for="Training">Training</label>
-            </div>
-            <div class="custom-control custom-checkbox my-3">
-                <input class="custom-control-input" name="by_department[Support]" type="checkbox" value="9" id="Support">
-                <label class="custom-control-label" for="Support">Support</label>
-            </div>
-            <div class="custom-control custom-checkbox my-3">
-                <input class="custom-control-input" name="by_department[Engineering]" type="checkbox" value="10" id="Engineering">
-                <label class="custom-control-label" for="Engineering">Engineering</label>
-            </div>
-            <div class="custom-control custom-checkbox my-3">
-                <input class="custom-control-input" name="by_department[Accounting]" type="checkbox" value="11" id="Accounting">
-                <label class="custom-control-label" for="Accounting">Accounting</label>
-            </div>
-            <div class="custom-control custom-checkbox my-3">
-                <input class="custom-control-input" name="by_department[Business Development]" type="checkbox" value="12" id="Business Development">
-                <label class="custom-control-label" for="Business Development">Business Development</label>
-            </div>
+            <label for="Human Resources" class="btn btn-default btn-block text-left text-white">Human Resources <input type="checkbox" name="by_department[Human Resources]" value="1" id="Human Resources" class="badgebox"><span class="badge">&check;</span></label>
+            <label for="Sales" class="btn btn-default btn-block text-left text-white">Sales <input type="checkbox" name="by_department[Sales]" value="2" id="Sales" class="badgebox"><span class="badge">&check;</span></label>
+            <label for="Marketing" class="btn btn-default btn-block text-left text-white">Marketing <input type="checkbox" name="by_department[Marketing]" value="3" id="Marketing" class="badgebox"><span class="badge">&check;</span></label>
+            <label for="Legal" class="btn btn-default btn-block text-left text-white">Legal <input type="checkbox" name="by_department[Legal]" value="4" id="Legal" class="badgebox"><span class="badge">&check;</span></label>
+            <label for="Services" class="btn btn-default btn-block text-left text-white">Services <input type="checkbox" name="by_department[Services]" value="5" id="Services" class="badgebox"><span class="badge">&check;</span></label>
+            <label for="Research and Development" class="btn btn-default btn-block text-left text-white">Research and Development <input type="checkbox" name="by_department[Research and Development]" value="6" id="Research and Development" class="badgebox"><span class="badge">&check;</span></label>
+            <label for="Product Management" class="btn btn-default btn-block text-left text-white">Product Management <input type="checkbox" name="by_department[Product Management]" value="7" id="Product Management" class="badgebox"><span class="badge">&check;</span></label>
+            <label for="Training" class="btn btn-default btn-block text-left text-white">Training <input type="checkbox" name="by_department[Training]" value="8" id="Training" class="badgebox"><span class="badge">&check;</span></label>
+            <label for="Support" class="btn btn-default btn-block text-left text-white">Support <input type="checkbox" name="by_department[Support]" value="9" id="Support" class="badgebox"><span class="badge">&check;</span></label>
+            <label for="Engineering" class="btn btn-default btn-block text-left text-white">Engineering <input type="checkbox" name="by_department[Engineering]" value="10" id="Engineering" class="badgebox"><span class="badge">&check;</span></label>
+            <label for="Accounting" class="btn btn-default btn-block text-left text-white">Accounting <input type="checkbox" name="by_department[Accounting]" value="11" id="Accounting" class="badgebox"><span class="badge">&check;</span></label>
+            <label for="Business Development" class="btn btn-default btn-block text-left text-white">Business Development <input type="checkbox" name="by_department[Business Development]" value="12" id="Business Development" class="badgebox"><span class="badge">&check;</span></label>
             <button type="submit" class="btn btn-lg btn-primary w-75 mx-3 mt-3">Search</button>
             <button type="reset" class="btn btn-sm btn-secondary w-75 mx-3 mt-4">Reset</button>
           </form>

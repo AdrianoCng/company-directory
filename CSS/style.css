@@ -20,7 +20,7 @@
 
 #sidebar-wrapper {
   min-height: 100vh;
-  margin-left: -15.5rem;
+  margin-left: -280px;
   -webkit-transition: margin .25s ease-out;
   -moz-transition: margin .25s ease-out;
   -o-transition: margin .25s ease-out;
@@ -33,7 +33,7 @@
 }
 
 #sidebar-wrapper form {
-  width: 15rem;
+  width: 270px;
 }
 
 #page-content-wrapper {
@@ -204,5 +204,11 @@ div.card-deck {
     margin-right: 15px;
     margin-bottom: 15px;
     margin-left: 15px;
+  }
+}
+
+@media (max-width: 370px) {
+  #logo {
+    display: none;
   }
 }
