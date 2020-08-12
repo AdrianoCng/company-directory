@@ -92,7 +92,7 @@ const renderCards = data => {
                                 <input class="form-control form-control-sm" type="email" name="email" value="${data.data[index].email}" id="email-modal-update-delete${index}" required>
                                 </div>                
                             </div>
-                            <div class="form-row">
+                            <div class="form-row mb-1">
                                 <div class="col-6">
                                 <label class="col-form-label" for=department-modal-update-delete${data.data[index].id}">Department: </label>
                                 <select class="custom-select custom-select-sm" name="department" id="department-modal-update-delete${data.data[index].id}" required>
