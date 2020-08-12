@@ -125,8 +125,8 @@ const renderCards = data => {
                                 <input class="form-control form-control-sm" type="hidden" name="departmentId" value="${data.data[index].departmentId}" required>
                                 </div>                
                             </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary position-relative-left" data-dismiss="modal" aria-label="Close">Cancel</button>
+                            <div class="modal-footer position-relative">
+                                <button type="button" class="btn btn-secondary position-absolute-left" data-dismiss="modal" aria-label="Close">Cancel</button>
                                 <button type="submit" name="action" value="update" class="btn btn-success" id="update-${data.data[index].id}">Update</button>
                                 <button type="submit" name="action" value="delete" class="btn btn-danger" id="delete-${data.data[index].id}">Delete</button>
                             </div>
