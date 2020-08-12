@@ -166,7 +166,7 @@
           <!-- Navbar -->
           <nav class="navbar navbar-dark bg-dark fixed-top">
             <button class="btn" id="menu-toggle"><span class="navbar-toggler-icon"></span></button>
-            <a class="navbar-brand" id="logo" ><img src="./Includes/Favicon/favicon-32x32.png" alt="logo"> Company Directory</a>
+            <a class="navbar-brand" id="logo" ><img src="./Includes/Favicon/favicon-32x32.png" alt="logo">ompany Directory</a>
             <button class="btn" id="add" data-toggle="modal" data-target="#create"><i class="fas fa-user-plus text-white"></i></button>
           </nav>
     

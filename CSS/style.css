@@ -1,6 +1,10 @@
 #logo {
-  color: #48B;
   font-family: 'Leckerli One', cursive;
+  font-size: 1.5rem;
+}
+
+#logo img {
+  float: left;
 }
 
 /* Sidebar */
