@@ -79,8 +79,7 @@
                   <input readonly class="form-control-sm form-control-plaintext" type="text" name="location" id="location-modal-create" value="" required>
                 </div>                    
               </div>
-              <div class="modal-footer position-relative">
-                <button type="button" class="btn btn-secondary position-absolute-left" data-dismiss="modal" aria-label="Close">Cancel</button>
+              <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 <button type="submit" class="btn btn-primary" id="add-button">Add</button>
               </div>
