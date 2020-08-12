@@ -36,7 +36,7 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body mb-3">
+          <div class="modal-body">
             <form action="" method="POST" id="create-modal-form">
               <div id="alert"></div>
               <div class="form-row">
@@ -55,7 +55,7 @@
                   <input class="form-control form-control-sm" type="email" name="email" id="email-modal-create" required>
                 </div>                
               </div>
-              <div class="form-row">
+              <div class="form-row mb-3">
                 <div class="col-6">
                   <label class="col-form-label" for="department-modal-create">Department: </label>
                   <select class="custom-select custom-select-sm" name="department" id="department-modal-create" required>
@@ -79,7 +79,8 @@
                   <input readonly class="form-control-sm form-control-plaintext" type="text" name="location" id="location-modal-create" value="" required>
                 </div>                    
               </div>
-              <div class="modal-footer">
+              <div class="modal-footer position-relative">
+                <button type="button" class="btn btn-secondary position-absolute-left" data-dismiss="modal" aria-label="Close">Cancel</button>
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 <button type="submit" class="btn btn-primary" id="add-button">Add</button>
               </div>
