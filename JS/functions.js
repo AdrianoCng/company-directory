@@ -73,7 +73,7 @@ const renderCards = data => {
                             <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <div class="modal-body mb-3">
+                        <div class="modal-body">
                             <form action="" id="update-form-modal-${data.data[index].id}" method="POST">
                             <div id="alert-${data.data[index].id}"></div>
                             <div class="form-row">
@@ -92,7 +92,7 @@ const renderCards = data => {
                                 <input class="form-control form-control-sm" type="email" name="email" value="${data.data[index].email}" id="email-modal-update-delete${index}" required>
                                 </div>                
                             </div>
-                            <div class="form-row mb-1">
+                            <div class="form-row mb-3">
                                 <div class="col-6">
                                 <label class="col-form-label" for=department-modal-update-delete${data.data[index].id}">Department: </label>
                                 <select class="custom-select custom-select-sm" name="department" id="department-modal-update-delete${data.data[index].id}" required>
@@ -125,7 +125,7 @@ const renderCards = data => {
                                 <input class="form-control form-control-sm" type="hidden" name="departmentId" value="${data.data[index].departmentId}" required>
                                 </div>                
                             </div>
-                            <div class="modal-footer position-relative">
+                            <div class="modal-footer position-relative pb-0">
                                 <button type="button" class="btn btn-secondary position-absolute-left" data-dismiss="modal" aria-label="Close">Cancel</button>
                                 <button type="submit" name="action" value="update" class="btn btn-success" id="update-${data.data[index].id}">Update</button>
                                 <button type="submit" name="action" value="delete" class="btn btn-danger" id="delete-${data.data[index].id}">Delete</button>
