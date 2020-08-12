@@ -1,8 +1,5 @@
 <?php
 
-ini_set("display_errors", 1);
-error_reporting(E_ALL);
-
 include("config.php");
 
 header('Content-Type: application/json; charset=UTF-8');
@@ -37,7 +34,7 @@ if (isset($_POST["q"])) {
 
     if ($tested_q) {
 
-        $q = $_POST["q"];
+        $q = $tested_q;
 
         $query = "SELECT p.id, firstName, lastName, email, d.name AS departmentName, d.id AS departmentId, loc.name As locationName FROM personnel AS p INNER JOIN department AS d ON d.id = p.departmentID INNER JOIN location as loc ON d.locationID = loc.id WHERE `firstName` LIKE '$q%' OR `lastName` LIKE '$q%'";
         
